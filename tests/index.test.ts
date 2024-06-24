@@ -1,7 +1,7 @@
 import { beforeEach, describe, it } from 'node:test';
 
 import assert from 'node:assert';
-import { getTrue } from './index';
+import { getTrue } from '../src/index';
 
 describe('some-test', () => {
 	let foo: boolean;
