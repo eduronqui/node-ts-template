@@ -1,3 +1,3 @@
 export function getTrue() {
-  return true
+	return true;
 }
