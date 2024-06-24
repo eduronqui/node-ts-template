@@ -12,8 +12,7 @@
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
     "start:dev": "nodemon src/index.ts",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "node --require ts-node/register  --test ./src/**/*.test.ts"
   },
   "keywords": [
     "typescript"
@@ -34,7 +33,6 @@
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
-    "@types/jest": "^27.4.0",
     "@types/node": "^20.14.8",
     "@typescript-eslint/eslint-plugin": "^5.11.0",
     "@typescript-eslint/parser": "^5.11.0",
@@ -43,11 +41,10 @@
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.0",
-    "jest": "^29.7.0",
     "nodemon": "^2.0.20",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
-    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.2"
   },
   "config": {

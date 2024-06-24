@@ -1,3 +1,6 @@
+import { beforeEach, describe, it } from 'node:test'
+
+import assert from 'node:assert'
 import { getTrue } from './index'
 
 describe('some-test', () => {
@@ -7,7 +10,7 @@ describe('some-test', () => {
     foo = getTrue()
   })
 
-  test('it should work', () => {
-    expect(foo).toBeTruthy()
+  it('should work', () => {
+    assert(foo)
   })
 })
